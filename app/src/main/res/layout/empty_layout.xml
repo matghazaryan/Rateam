@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="isVisible"
+            type="boolean" />
+
+        <variable
+            name="empty"
+            type="am.rate.core.model.Empty" />
+
+        <variable
+            name="handler"
+            type="am.rate.core.listeners.IEmptyViewHandler" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:baseVisibleView="@{isVisible}">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/text_view"
+                android:layout_marginTop="20dp"
+                android:text="No data" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

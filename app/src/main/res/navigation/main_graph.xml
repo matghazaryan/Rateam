@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_graph"
+            app:startDestination="@id/banksFragment">
+
+    <fragment android:id="@+id/banksFragment" android:name="am.rate.ui.fragments.banks.view.BanksFragment"
+              android:label="fragment_banks" tools:layout="@layout/fragment_banks">
+        <action android:id="@+id/action_banksFragment_to_bankDetailFragment"
+                app:destination="@id/bankDetailFragment" app:enterAnim="@anim/right_to_left_1"
+                app:exitAnim="@anim/right_to_left_2" app:popEnterAnim="@anim/left_to_right_1"
+                app:popExitAnim="@anim/left_to_right_2"/>
+    </fragment>
+    <fragment android:id="@+id/bankDetailFragment" android:name="am.rate.ui.fragments.bankDetails.view.BankDetailFragment"
+              android:label="fragment_bank_detail" tools:layout="@layout/fragment_bank_detail"/>
+</navigation>

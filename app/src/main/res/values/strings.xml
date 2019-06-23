@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rate.am</string>
+
+    <string name="hello_blank_fragment">Banks</string>
+    <string name="general_dialog_error">Error</string>
+    <string name="general_dialog_ok">Ok</string>
+    <string name="general_dialog_warning">Warning</string>
+    <string name="general_dialog_no_internet_connection">No internet connection</string>
+    <string name="general_error_error">Server error</string>
+</resources>
