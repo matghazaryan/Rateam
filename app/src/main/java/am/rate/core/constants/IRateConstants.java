@@ -14,11 +14,6 @@ public interface IRateConstants {
         int BANK = 1000;
     }
 
-    interface Method {
-        String BANK_LIST = "rates.ashx?lang=en";
-        String BANK_DETAILS = "branches.ashx?id=%s";
-    }
-
     interface Lang {
         String currentLang = "am";
     }
